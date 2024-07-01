@@ -24,7 +24,7 @@ body{
     margin: 10% 15% ;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .apresentacao__conteudo{
@@ -40,6 +40,7 @@ body{
     font-family: "Krona One", sans-serif;
 }
 
+
 .apresentacao__conteudo__paragrafo{
     font-size: 24;
     font-family: "Montserrat", sans-serif;
@@ -48,21 +49,48 @@ body{
 
 .apresentacao__links{
     display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
     justify-content: space-between;
 }
 
+.apresentacao__links_titulo{
+    font-size: 24px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+}
+
 .apresentacao__links__butoes{
-    background-color: #26ABE5;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: #F6F6F6;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color: #000000;
     text-decoration: none;
-    width: 280px;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border: 2px solid #26ABE5;
+    border-radius: 8px;
     font-size: 24px;
     padding: 22px ,0px;
+    transition-duration: 1.5s;
+    transition-property: background-color, border, transform;
 }
+
+.apresentacao__links__butoes:hover{
+    background-color: #272727;
+    border: 2px solid #26ABE5;
+    transform: translateY(-5px);
+}
+
+.apresentacao__links_logo{
+    border: 0px;
+    width: 32px;
+    height: 32px;
+}
+
 
 img{
     border-radius: 5%; 
