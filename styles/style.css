@@ -47,14 +47,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    gap: 5rem;
 }
 
 .apresentacao__conteudo{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 60%;
-    height: 40%;
+    width: 50%;
 }
 
 .apresentacao__conteudo__titulo{
@@ -63,7 +63,7 @@ body{
 }
 
 .titulo-destaque{
-    color:var(--cor-terciaria)5;
+    color:var(--cor-terciaria);
 }
 
 
@@ -94,9 +94,9 @@ body{
     gap: 16px;
     color: var(--cor-secundaria);
     font-family: var(--font-secundaria);
-    font-weight: 600;
+    font-weight: 600px;
     text-decoration: none;
-    width: 378px;
+    width: 30%;
     text-align: center;
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
@@ -122,36 +122,9 @@ body{
 img{
     border-radius: 5%; 
     border: 2px solid var(--cor-terciaria);
-    height: 450px;
+    width: 50%;
 }
 
-.download_cv{
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-}
-
-.download_cv__botao{
-    background-color: var(--cor-primaria);
-    text-align: center;
-    border: 2px solid var(--cor-terciaria);
-    border-radius: 8px;
-    transition-duration: 1.5s;
-    transition-property: background-color, border, transform;
-}
-
-.download_cv__botao > a {
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: var(--font-primaria);
-    font-size: 1.25rem;
-}
-
-.download_cv__botao:hover{
-    background-color: var(--cor-hover);
-    border: 2px solid var(--cor-terciaria);
-    transform: translateY(-5px);
-}
 
 .rodape{
     text-align: center;
@@ -165,15 +138,28 @@ img{
 }
 
 
-@media(max-width:720px){
-    .apresentacao{
-        flex-direction: column;
+@media(max-width:1200px){
+    .cabecalho{
+        padding: 10%;   
+    }
+
+    .cabecalho__menu{
         justify-content: center;
-        align-items: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: 100%;
     }
 
     .img{
-        height: 250px;
-        margin-top: 10px;
+        width: 100%;
     }
+
+    
+
 }
