@@ -96,7 +96,7 @@ body{
     font-family: var(--font-secundaria);
     font-weight: 600px;
     text-decoration: none;
-    width: 30%;
+    width: 40%;
     text-align: center;
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
@@ -122,7 +122,7 @@ body{
 img{
     border-radius: 5%; 
     border: 2px solid var(--cor-terciaria);
-    width: 50%;
+    width: 40%;
 }
 
 
@@ -158,6 +158,10 @@ img{
 
     .img{
         width: 100%;
+    }
+
+    .apresentacao__links__butoes{
+        width: auto;
     }
 
     
